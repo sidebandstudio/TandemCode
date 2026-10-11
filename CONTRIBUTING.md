@@ -5,6 +5,17 @@ how to run the app locally and make common changes. Run `make check`, which is
 what CI runs, before opening a pull request. For anything larger than a small
 fix, open an issue first so we can agree on the approach.
 
+## Fork and open a pull request
+
+[Fork TandemCode](https://github.com/sidebandstudio/TandemCode/fork) to your own
+GitHub account, then clone your fork and create a topic branch from `main`.
+You do not need an invitation or write access to Sideband's repository.
+
+Push your branch to your fork and open a pull request targeting
+`sidebandstudio/TandemCode:main`. Select **compare across forks** if GitHub does
+not show your branch. Keep each pull request to one topic and describe the
+change and the checks you ran.
+
 ## Adding a problem
 
 A problem is one SQL migration and one reference solution, submitted as a
@@ -160,6 +171,15 @@ statement in your own words: do not copy text from other sites.
 
 If another problem is merged first and takes your migration number, rename your
 file to the next free number. Two migrations with the same number fail CI.
+
+## Maintainer review
+
+Pull requests into `main` require an approving review from
+[Ali Younes, @whoisaldo](https://github.com/whoisaldo), the current maintainer
+and code owner. New commits dismiss earlier approvals. The rule also applies
+to other administrators. Only Ali has a review bypass, so he can merge his own
+changes while he is the sole maintainer. All changes to `main` must still go
+through a pull request.
 
 Contributions are licensed under the Apache License 2.0, like the rest of the
 project.
